@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python Docs - Indie Edition</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>
+      <img src="https://www.citypng.com/public/uploads/preview/hd-python-logo-symbol-transparent-png-735811696257415dbkifcuokn.png" alt="Python Logo" class="logo" />
+      Python Docs
+    </header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Syntax_and_Indentation">Syntax and Indentation</a>
+    <a class="nav-link" href="#Data_Types">Data Types</a>
+    <a class="nav-link" href="#Control_Structures">Control Structures</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Python is a high-level, interpreted programming language known for its readability and flexibility.</p>
+      <p>It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</p>
+      <p>Python has a large standard library and an active community that contributes a wealth of third-party modules.</p>
+      <p>This documentation serves as a brief overview of essential Python programming concepts.</p>
+      <p>Whether you’re a beginner or seasoned developer, Python’s simplicity makes it a great choice for many applications.</p>
+      <code>print("Hello, Python!")</code>
+    </section>
+
+    <section class="main-section" id="Syntax_and_Indentation">
+      <header>Syntax and Indentation</header>
+      <p>Python uses indentation instead of braces to define blocks of code.</p>
+      <p>Proper indentation is not just for style—it's syntactically required in Python.</p>
+      <p>Typically, each block is indented with 4 spaces.</p>
+      <p>Incorrect indentation will result in an `IndentationError`.</p>
+      <p>This helps make Python code visually uncluttered and easy to follow.</p>
+      <code>if 5 > 2:</code>
+      <code>    print("Five is greater than two!")</code>
+      <ul>
+        <li>Consistent indentation is mandatory</li>
+        <li>No need for semicolons</li>
+        <li>Colons (`:`) start code blocks</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Data_Types">
+      <header>Data Types</header>
+      <p>Python provides various built-in data types.</p>
+      <p>Common types include: integers, floats, strings, lists, tuples, dictionaries, and booleans.</p>
+      <p>Variables in Python do not need explicit declaration to reserve memory space.</p>
+      <p>The data type is automatically determined from the value assigned.</p>
+      <p>You can check a variable's type using the `type()` function.</p>
+      <code>x = 5</code>
+      <code>print(type(x))  # <class 'int'></code>
+      <ul>
+        <li>int: Integer numbers</li>
+        <li>float: Decimal numbers</li>
+        <li>str: Text</li>
+        <li>list, tuple, dict: Collections</li>
+        <li>bool: True or False</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Control_Structures">
+      <header>Control Structures</header>
+      <p>Python supports typical control structures such as `if`, `for`, and `while`.</p>
+      <p>Control flow is intuitive and relies on indentation to structure code blocks.</p>
+      <p>`if-elif-else` statements are used for decision making.</p>
+      <p>Loops are used for iteration.</p>
+      <p>You can break out of loops using `break`, or skip an iteration using `continue`.</p>
+      <code>for i in range(5):</code>
+      <code>    print(i)</code>
+      <ul>
+        <li>`if` for conditional checks</li>
+        <li>`for` for iteration over sequences</li>
+        <li>`while` for condition-based loops</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions in Python are defined using the `def` keyword.</p>
+      <p>They help break programs into smaller, modular chunks.</p>
+      <p>Functions can accept parameters and return values.</p>
+      <p>You can also use lambda functions for short anonymous functions.</p>
+      <p>Python also supports built-in functions like `len()`, `max()`, `sum()`, etc.</p>
+      <code>def greet(name):</code>
+      <code>    return "Hello " + name</code>
+      <ul>
+        <li>Use `def` to define functions</li>
+        <li>Use `return` to return values</li>
+        <li>Use `lambda` for short one-line functions</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

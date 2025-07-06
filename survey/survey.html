@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Experience Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">School Experience Survey</h1>
+        <p id="description">Help us improve our school services by sharing your valuable feedback. Your responses will help us create better experiences for everyone.</p>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" name="age" placeholder="Enter your age" min="17" max="50">
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">What is your course? </label>
+                <select id="dropdown" name="referral">
+                    <option value="">Select an option</option>
+                    <option value="OD">Doctor of Optometry</option>
+                    <option value="BSN">Bachelor of Science in Nursing</option>
+                    <option value="BSOT">Bachelor of Science in Occupational Therapy</option>
+                    <option value="BSB">Bachelor of Science in Biology</option>
+                    <option value="BSMT">Bachelor of Medical Technology</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>How would you rate your overall experience?</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="excellent" name="rating" value="excellent">
+                        <label for="excellent">Excellent</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="good" name="rating" value="good">
+                        <label for="good">Good</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="fair" name="rating" value="fair">
+                        <label for="fair">Fair</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="poor" name="rating" value="poor">
+                        <label for="poor">Poor</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>What features do you find most valuable? (Check all that apply)</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="canteen" name="features" value="canteen">
+                        <label for="canteen">Canteen</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="customer-support" name="features" value="customer-support">
+                        <label for="customer-support">Customer Support</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="pricing" name="features" value="pricing">
+                        <label for="pricing">Fair Pricing</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="quality" name="features" value="quality">
+                        <label for="quality">Equipment Quality</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="reliability" name="features" value="reliability">
+                        <label for="reliability">Reliability</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" placeholder="Share any additional thoughts or suggestions..."></textarea>
+            </div>
+
+            <button type="submit" id="submit">Submit Survey</button>
+        </form>
+    </div>
+</body>
+</html>

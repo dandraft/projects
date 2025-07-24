@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <img id="header-img" src="logo.svg" alt="Product Logo">
+        <nav id="nav-bar">
+            <a href="#samples" class="nav-link">Samples of Art Pieces</a>
+            <a href="#video-section" class="nav-link">Bob Ross</a>
+            <a href="#art-pieces" class="nav-link">Other Pieces of Art</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Human-made designs, Human masterpiece</h1>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter your email address"
+                    required
+                >
+                <input type="submit" id="submit" value="Get Started">
+            </form>
+        </section>
+
+        <section id="samples">
+            <h2>Samples of Art Pieces</h2>
+            <div class="samples-grid">
+                <div class="sample-item">
+                    <img src="https://d1ee3oaj5b5ueh.cloudfront.net/thumbs/680xAUTO_original_article_2021_07_60ec4f1b5d566.jpeg" alt="abstract">
+                    <h3>Abstract</h3>
+                    <p>Explore the world of abstract art, where shapes, colors, and forms come together to create stunning visual experiences.</p>
+                </div>
+                <div class="sample-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY479ucz8VjhX-2J9oybsPpUQwxloTWa6Irw&s" alt="realism">
+                    <h3>Realism</h3>
+                    <p>Immerse yourself in the beauty of realism, capturing life as it is with incredible detail and precision.</p>
+                </div>
+                <div class="sample-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReiq5fh6dBptVEECdgN_sb1o1JxCLjtLqC6A&s" alt="expressionism">
+                    <h3>Expressionism</h3>
+                    <p>Unleash your emotions with expressionism, a style that conveys feelings and moods through bold strokes and vivid colors.</p>
+                </div>
+                <div class="sample-item">
+                    <img src="https://cdn.britannica.com/77/2577-004-DA7549AE/The-Creation-of-Adam-ceiling-fresco-Michelangelo.jpg" alt="fresco">
+                    <h3>Fresco</h3>
+                    <p>Step into history with fresco art, a timeless technique that adorns walls and ceilings with breathtaking imagery.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="video-section">
+            <h2>Bob Ross 1hr Special</h2>
+            <iframe 
+                id="video"
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/watch?v=mT0RNrTDHkI"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </section>
+
+        <section id="art-pieces">
+            <h2>Art Pieces</h2>
+            <div class="art-grid">
+                <div class="art-item">
+                    <img src="https://cdn.britannica.com/77/2577-004-DA7549AE/The-Creation-of-Adam-ceiling-fresco-Michelangelo.jpg" alt="The Creation of Adam">
+                    <h3>The Creation of Adam</h3>
+                    <p>Michelangelo's masterpiece fresco depicting the biblical story of creation.</p>
+                </div>
+                <div class="art-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Starry_Night_Over_the_Rhone.jpg/1280px-Starry_Night_Over_the_Rhone.jpg" alt="Starry Night Over the Rhône">
+                    <h3>Starry Night Over the Rhône</h3>
+                    <p>Van Gogh's iconic painting capturing the beauty of a starry night over water.</p>
+                </div>
+                <div class="art-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/330px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Mona Lisa">
+                    <h3>Mona Lisa</h3>
+                    <p>Leonardo da Vinci's world-famous portrait known for its enigmatic expression.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

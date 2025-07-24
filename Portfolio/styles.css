@@ -1,4 +1,3 @@
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +13,6 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar Styles */
 #navbar {
     position: fixed;
     top: 0;
@@ -52,10 +50,9 @@ body {
 }
 
 .nav-links a:hover {
-    color: #00ff00;
+    color: black;
 }
 
-/* Welcome Section */
 #welcome-section {
     height: 100vh;
     display: flex;
@@ -67,21 +64,58 @@ body {
 }
 
 .welcome-content h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     margin-bottom: 1rem;
 }
 
-/* Projects Section */
+.welcome-content p {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.typed-text::after {
+    content: "";
+    border-right: 3px solid #fff;
+    animation: typing 12s infinite, blink 1s infinite;
+    font-weight: bold;
+}
+
+@keyframes typing {
+    0%, 24% {
+        content: "Web Developer";
+    }
+    25%, 49% {
+        content: "Programmer";
+    }
+    50%, 74% {
+        content: "Canva Designer";
+    }
+    75%, 100% {
+        content: "Student";
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 #projects {
     padding: 5rem 2rem;
-    background: #f4f4f4;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    color: white;
 }
 
 #projects h2 {
     text-align: center;
     margin-bottom: 3rem;
+    color: white;
 }
 
+#projects p{
+    font-family: Cascadia Code, sans-serif;
+}
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -91,16 +125,18 @@ body {
 }
 
 .project-tile {
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     overflow: hidden;
     text-decoration: none;
-    color: #333;
+    color: white;
     transition: transform 0.3s ease;
+    backdrop-filter: blur(5px);
 }
 
 .project-tile:hover {
     transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .project-tile img {
@@ -112,9 +148,9 @@ body {
 .project-tile p {
     padding: 1rem;
     text-align: center;
+    color: white;
 }
 
-/* Contact Section */
 #contact {
     padding: 5rem 2rem;
     background: #333;
@@ -139,7 +175,10 @@ body {
     color: #00ff00;
 }
 
-/* Media Queries */
+.contact-links i {
+    margin-right: 8px;
+}
+
 @media (max-width: 768px) {
     .nav-content {
         flex-direction: column;
